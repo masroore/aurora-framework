@@ -2,6 +2,6 @@
 
 All notable changes to `aurora` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 0.0.1 - 2024-04-02
 
-- initial release
+- initial release. Core framwerok code extracted from `aurora`
