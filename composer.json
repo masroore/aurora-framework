@@ -1,0 +1,61 @@
+{
+    "name": "masroore/aurora-framework",
+    "description": "Aurora framework",
+    "keywords": [
+        "masroore",
+        "aurora"
+    ],
+    "homepage": "https://github.com/masroore/aurora",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Masroor Ehsan",
+            "email": "masroore@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+		"php": "^8.1 || ^8.2 || ^8.3",
+		"ext-json": "*",
+		"ext-openssl": "*",
+		"guzzlehttp/guzzle": "^7.8",
+		"hashids/hashids": "^5.0",
+		"monolog/monolog": "^3.5",
+		"mrclay/minify": "^4.0",
+		"nesbot/carbon": "^3.2",
+		"predis/predis": "^2.2",
+		"psr/log": "^3.0",
+		"symfony/http-kernel": "^7.0",
+		"symfony/mailer": "^7.0",
+		"symfony/mime": "^7.0",
+		"vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+		"filp/whoops": "^2.15",
+		"splitbrain/php-cli": "^1.3",
+		"symfony/var-dumper": "^7.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+		"files": [
+			"src/helpers.php"
+		],
+        "psr-4": {
+            "Aurora\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aurora\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
